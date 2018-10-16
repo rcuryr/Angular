@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" routerLink="/" >Clientes</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="cliente/salvar">Novo</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Procurar...">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+      </form>
+    </div>
+  </nav>
+
+   <router-outlet> </router-outlet>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Clientes</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Novo</a></li>
+    </ul>
+  </div>
+   <ul class="nav navbar-nav navbar-right">
+ 
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Procurar...">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+      </form>	
+  </ul>
+</nav>
+  
+<div class="container">
+  <h3>Basic Navbar Example</h3>
+  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
+</div>
+
+</body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	  <a class="navbar-brand" routerLink="/" >Clientes</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a class="nav-link" routerLink="/">Home</a></li>
+      <li><a class="nav-link" routerLink="cliente/salvar">Novo</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+		<li>
+     <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Procurar...">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+      </form>		  
+		</li>
+    </ul>
+  </div>
+</nav>
+
+
+   
